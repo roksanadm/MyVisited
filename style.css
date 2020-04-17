@@ -10,9 +10,8 @@ header,footer,content,nav{
     display: grid;
     grid-template-columns: 1fr;
 }
-header,footer,content{
+header,footer{
 width: 100%;
-height: 100px;
 background:whitesmoke;
 opacity: 0.6;
 padding:0;
@@ -22,20 +21,78 @@ header{
     font-family: 'Dancing Script', cursive;
     font-size: 400%;
     text-align: center;
+    height: 150px;
     
 }
 footer{
     margin-top: 350px;
+    height: 200px;
 }
 nav{
     background: whitesmoke;
     opacity: 0.6;
-    height: 300px;
+    height: auto;
     width: 200px;
+    margin-top: 10px;
 }
 li{
     list-style: none;
     border-bottom: black solid 1px;
     line-height: 45px;
     margin-right: 50px;
+}
+section{
+    height: 300px;
+    margin-top: 10px;
+    background: wheat;
+    opacity: 0.6;
+}
+#h1d,#p1d{
+    color: black;
+    font-family: 'Girassol', cursive;
+    text-align: center;
+}
+#h1d{
+    font-size: 50px;
+}
+#p1d{
+    font-size: 30px;
+}
+#icon1{
+    width: 100px;
+    height: 100px;
+    margin-left: 50%;
+}
+#iconNav{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    margin-top: 10px;
+    margin-inline-start: 5px;
+    
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#Layer_1{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+    clear: both;
+    text-align: center;
+}
+#footer_id{
+    position: relative;
+    overflow: hidden;
+    clear: both;
+    text-align: center;
+    margin-left: 25px 25px 25px 5%;
+}
+#footer_id li{
+    display: inline-block;
+    margin-top: 100px;
+    
 }
