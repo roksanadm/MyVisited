@@ -42,7 +42,7 @@ li{
     margin-right: 50px;
 }
 section{
-    height: 300px;
+    height: auto;
     margin-top: 10px;
     background: wheat;
     opacity: 0.6;
@@ -89,10 +89,17 @@ a{
     overflow: hidden;
     clear: both;
     text-align: center;
-    margin-left: 25px 25px 25px 5%;
+    margin-left: 10px 10px 10px 5%;
 }
 #footer_id li{
     display: inline-block;
     margin-top: 100px;
     
+}
+#informationsect{
+    font-size: 30px;
+    text-align: start;
+    margin-top: 20px;
+    padding: 20px;
+    font-family: 'Dancing Script', cursive;
 }
