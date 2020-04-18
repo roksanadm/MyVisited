@@ -163,7 +163,7 @@ a{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: auto;
     height: 100%;
     background: linear-gradient(to left, #91a33e, #d81d1d);
     border-radius: 30px;
@@ -175,11 +175,10 @@ a{
   content{
     display: grid;
     margin-top: 10px;
-    grid-template-rows: minmax(200px, auto);
-    width: 30%;
+    width: auto;
     }
  .contact form{
-    width: 50px;   
+    width:auto;   
             }
             .item{
                 color: rgb(12, 12, 12);
