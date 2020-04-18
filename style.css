@@ -21,8 +21,9 @@ header{
     font-family: 'Dancing Script', cursive;
     font-size: 400%;
     text-align: center;
-    height: 150px;
-    
+    height: 150px;    
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
 }
 footer{
     margin-top: 350px;
@@ -41,12 +42,18 @@ li{
     line-height: 45px;
     margin-right: 50px;
 }
-section{
+#development{
     height: auto;
     margin-top: 10px;
     background: wheat;
     opacity: 0.6;
+
 }
+#information{
+    background: url(240_F_234871992_lGEdtt3uUjl4qmmeVXyjYWz45y0dGCFr.jpg);
+    opacity: 0.5;
+}
+
 #h1d,#p1d{
     color: black;
     font-family: 'Girassol', cursive;
@@ -101,5 +108,83 @@ a{
     text-align: start;
     margin-top: 20px;
     padding: 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     font-family: 'Dancing Script', cursive;
 }
+
+
+.btnflip {
+    position: relative;
+    top: 75%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transform-origin: center center;
+    margin-top: 50px;
+  }
+  .btnflip-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    background-color: rgba(255,255,255, .05);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 2s;
+  }
+.btnflip-item.btnflip__front {
+    transform: rotateX(0deg) translateZ(20px);
+  }
+  .btnflip:hover .btnflip-item.btnflip__front {
+    transform: rotateX(-180deg) translateZ(20px);
+  }
+  .btnflip-item.btnflip__back {
+    transform: rotateX(180deg) translateZ(20px);
+  }
+  .btnflip:hover .btnflip-item.btnflip__back {
+    transform: rotateX(0deg) translateZ(20px);
+  }
+  .btnflip-item.btnflip__center {
+    background: linear-gradient(to left, #5bd5eb, #d84444);
+  }
+  .btnflip-item.btnflip__center::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #91a33e, #d81d1d);
+    border-radius: 30px;
+    transform: translateZ(-1px);
+  }
+  .btnflip:hover .btnflip-item.btnflip__center {
+    transform: rotateX(-180deg);
+  }
+  content{
+    display: grid;
+    margin-top: 10px;
+    grid-template-rows: minmax(200px, auto);
+    width: 30%;
+    }
+ .contact form{
+    width: 50px;   
+            }
+            .item{
+                color: rgb(12, 12, 12);
+                background: url(bee-hive-background-dikaseva.png);
+                opacity: 0.5;
+                border: 1px solid rgb(13, 13, 14);
+                padding: 10px;
+                box-shadow: 0 14px 28px rgba(94, 202, 235, 0.25), 0 10px 10px rgba(26, 207, 231, 0.22);
