@@ -116,7 +116,8 @@ a{
 .btnflip {
     position: relative;
     top: 25%;
-    left: 600px;
+    left: 45%;
+    right: 45%;
     transform: translate(-50%, -50%);
     width: 250px;
     height: 60px;
