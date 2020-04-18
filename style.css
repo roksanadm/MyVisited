@@ -141,7 +141,7 @@ a{
     border-radius: 30px;
     text-transform: uppercase;
     color: #fff;
-    transition: 2s;
+    transition: 1s;
   }
 .btnflip-item.btnflip__front {
     transform: rotateX(0deg) translateZ(20px);
@@ -163,7 +163,7 @@ a{
     position: absolute;
     top: 0;
     left: 0;
-    width: auto;
+    width: 100%;
     height: 100%;
     background: linear-gradient(to left, #91a33e, #d81d1d);
     border-radius: 30px;
@@ -175,10 +175,11 @@ a{
   content{
     display: grid;
     margin-top: 10px;
-    width: auto;
+    grid-template-rows: minmax(200px, auto);
+    width: 300px;
     }
  .contact form{
-    width:auto;   
+    width: 300px;   
             }
             .item{
                 color: rgb(12, 12, 12);
