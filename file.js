@@ -1,10 +1,15 @@
-function show() {
-    alert("Заполните пожалуйста форму!");
-  }
-    var x = document.getElementsByClassName("btnflip");
-    x.onclick = function () {
-    document.body.innerHTML = Date();
-}
 
-element.addEventListener("click", myFunction);
-element.addEventListener("mouseover", myFunction);
+
+(function main() {
+    document.addEventListener('DOMContentLoaded', DOMContentLoaded);
+   
+    function DOMContentLoaded() {
+          var buttonNode = document.querySelector('.btnflip-item btnflip__back');
+      buttonNode.addEventListener('click', showForm);
+    }
+      
+    function showForm() {
+      var node = document.querySelector('.contact form');
+      node.classList.remove('.contact form');
+    }
+  })();
