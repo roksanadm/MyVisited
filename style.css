@@ -4,7 +4,7 @@ body{
     background-size:cover;
     background-attachment:fixed;
     display: grid;
-    height: 1000px;
+    height: auto;
 }
 footer,content,nav{
     display: grid;
@@ -55,8 +55,8 @@ footer{
 #development{
     height:auto 250px;
     margin-top: 40px;
-    background: wheat;
-    opacity: 0.6;
+    background: rgb(58, 62, 65);
+    opacity: 0.8;
     width: auto;
 
 }
@@ -66,10 +66,34 @@ footer{
     margin-top: 40px;
 }
 
+.a{
+    height: 200px;
+    font-size: 20px;
+    background: rgb(58, 62, 65);
+    opacity: 0.7;
+    padding: 5px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 50px;
+}
+.h2classA{
+    text-align: center;
+    color: white;
+    opacity: none;
+    font-weight: bolder;
+}
+
+
+.b{
+margin-top: 200px;
+
+
+}
 #h1d,#p1d{
     color: black;
     font-family: 'Girassol', cursive;
     text-align: center;
+    opacity: none;
 }
 #h1d{
     font-size: 50px;
@@ -127,7 +151,6 @@ footer{
 
 .btnflip {
     position: relative;
-    top: 25%;
     left: 45%;
     right: 45%;
     transform: translate(-50%, -50%);
@@ -137,7 +160,7 @@ footer{
     transform-style: preserve-3d;
     perspective: 1000px;
     transform-origin: center center;
-    margin-top: 50px;
+    margin-top: 200px;
   }
   .btnflip-item {
     position: absolute;
@@ -193,7 +216,7 @@ footer{
     }
  .contact form{
     width: 300px;   
-    display:none;
+    display:block;
     color: rgb(12, 12, 12);
     background: url(bee-hive-background-dikaseva.png);
     opacity: 0.5;
