@@ -6,52 +6,69 @@ body{
     display: grid;
     height: 1000px;
 }
-header,footer,content,nav{
+footer,content,nav{
     display: grid;
-    grid-template-columns: 1fr;
 }
-header,footer{
-width: 100%;
+footer{
+width:100%;
 background:whitesmoke;
 opacity: 0.6;
 padding:0;
 }
-header{
-    margin-top: 0;
+
+.container-fluid{
+    background: rgb(255, 253, 253);
+    opacity: 0.8;
+    width: 100%;
+}
+/*
+.navbar-header{
+
+}*/
+.navbar-brand{
+    text-decoration: none;
     font-family: 'Dancing Script', cursive;
-    font-size: 400%;
+    font-size:400px;
     text-align: center;
-    height: 150px;    
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    color: rgb(5, 5, 5);
+      
 
 }
+
+.navbar-nav>a{
+text-decoration: none;
+color: black;
+}
+
 footer{
     margin-top: 350px;
-    height: 200px;
+    height: 200px auto;
 }
-nav{
+.nav2{
     background: whitesmoke;
     opacity: 0.6;
-    height: auto;
+    height: 250px;
     width: 200px;
-    margin-top: 10px;
+    margin-top: 40px;
 }
-li{
+.linav2{
     list-style: none;
     border-bottom: black solid 1px;
     line-height: 45px;
     margin-right: 50px;
 }
 #development{
-    height: auto;
-    margin-top: 10px;
+    height:auto 250px;
+    margin-top: 40px;
     background: wheat;
     opacity: 0.6;
+    width: auto;
 
 }
 #information{
     background: url(240_F_234871992_lGEdtt3uUjl4qmmeVXyjYWz45y0dGCFr.jpg);
     opacity: 0.5;
+    margin-top: 40px;
 }
 
 #h1d,#p1d{
@@ -79,7 +96,7 @@ li{
     
     
 }
-a{
+.linav2>a{
     text-decoration: none;
     color: black;
 }
@@ -196,3 +213,4 @@ a{
                 border: 1px solid rgb(13, 13, 14);
                 padding: 10px;
                 box-shadow: 0 14px 28px rgba(94, 202, 235, 0.25), 0 10px 10px rgba(26, 207, 231, 0.22);
+            }
