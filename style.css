@@ -36,7 +36,9 @@ padding:0;
 }
 
  
-
+.navbar-nav>li{
+    display: inline-flex;
+}
 
 footer{
     margin-top: 350px;
