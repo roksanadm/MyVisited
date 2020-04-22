@@ -1,13 +1,41 @@
-.contact form{
-    width: 300px;   
-    display:block;
-    color: rgb(12, 12, 12);
-    background: url(bee-hive-background-dikaseva.png);
-    opacity: 0.5;
-    border: 1px solid rgb(13, 13, 14);
-    padding: 10px;
-    box-shadow: 0 14px 28px rgba(94, 202, 235, 0.25), 0 10px 10px rgba(26, 207, 231, 0.22);
-            }
+body{
+    background:rgb(10, 9, 8);
+    background-size:cover;
+    background-attachment:fixed;
+    display: grid;
+    height: auto;}
+
+
+    .navbar-brand{
+        text-decoration: none;
+        font-family: 'Dancing Script', cursive;
+        font-size:400px;
+        text-align: center;
+        color: rgb(5, 5, 5);
+          
+    
+    }
+
+    .container-fluid{
+        background: rgb(255, 253, 253);
+        opacity: 0.8;
+        width: 100%;
+    }
+
+.contact form {
+    color: lavender;
+    padding: 50px;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin: 0;
+    background: rgb(7, 7, 7);
+    opacity: 0.8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
             /*.item{
                 color: rgb(12, 12, 12);
                 background: url(bee-hive-background-dikaseva.png);
@@ -16,3 +44,15 @@
                 padding: 10px;
                 box-shadow: 0 14px 28px rgba(94, 202, 235, 0.25), 0 10px 10px rgba(26, 207, 231, 0.22);
             }*/
+            form{
+                position: relative;
+                margin-top: 10px;
+            }
+            label{
+                padding-left: -2px;
+            }
+            input{
+                margin-right:5px;
+                padding: 5px;
+                
+            }
