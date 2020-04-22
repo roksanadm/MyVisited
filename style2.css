@@ -1,9 +1,10 @@
 body{
-    background:rgb(10, 9, 8);
+    background-image: url(Pagezoo-Enterprise-SEO-Tools-Title-Image.jpg);
     background-size:cover;
     background-attachment:fixed;
     display: grid;
-    height: auto;}
+    height: auto;
+}
 
 
     .navbar-brand{
@@ -11,22 +12,40 @@ body{
         font-family: 'Dancing Script', cursive;
         font-size:400px;
         text-align: center;
-        color: rgb(5, 5, 5);
+        color: rgb(255, 255, 255);
           
     
     }
 
     .container-fluid{
-        background: rgb(255, 253, 253);
+        background: rgb(3, 3, 3);
         opacity: 0.8;
         width: 100%;
+    }
+
+    li>a{
+        text-align: center;
+        color: black;
+        
+    }
+
+    li{
+background:grey;
+text-align: center;
+opacity: 0.6;
+    }
+
+    .active{
+        background: rgb(247, 244, 244);
+        text-align: center;
+        color: black;
     }
 
 .contact form {
     color: lavender;
     padding: 50px;
     width: 400px;
-    height: 400px;
+    height: 500px;
     position: relative;
     margin: 0;
     background: rgb(7, 7, 7);
