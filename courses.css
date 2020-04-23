@@ -6,3 +6,24 @@ body{
     display: grid;
     height: auto;
 }
+
+.h4classA{
+    text-align: center;
+    color: white;
+    opacity: none;
+    font-weight: bolder;
+
+
+}
+
+.p_a{
+    color: cornsilk;
+    opacity: none;
+
+}
+
+.container-fluid{
+    background: rgb(3, 3, 3);
+    opacity: 0.8;
+    width: 100%;
+}
