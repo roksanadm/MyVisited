@@ -285,5 +285,15 @@ opacity: none;
  .package, featured{
 
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 80%;
+    background:rgb(194, 212, 226);
+    opacity: 0.6;
+    width: 300px;
+    height: auto;
+    text-align: center;
+
+    
+ }
+ .features>li{
+     list-style-type: none;
  }

@@ -30,4 +30,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?id=703448&appid=357273476
   });
 
 
-  //https://openweathermap.org/img/wn/02d@2x.png
+//https://openweathermap.org/img/wn/02d@2x.png
+
+
+
