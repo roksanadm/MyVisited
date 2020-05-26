@@ -281,4 +281,9 @@ opacity: none;
     grid-template-rows: minmax(200px, auto);
     width: 300px;
     }
- 
+
+ .package, featured{
+
+    margin-top: 50px;
+    margin-left: 50px;
+ }
