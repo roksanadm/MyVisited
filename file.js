@@ -1,4 +1,7 @@
 
+//$('.contact').magnificContact();
+
+
 
 (function main() {
   document.addEventListener('DOMContentLoaded', DOMContentLoaded);
@@ -9,8 +12,8 @@
   }
 
   function showForm() {
-    var node = document.querySelector('.contact form');
-    node.classList.remove('.contact form');
+    var node = document.querySelector('.contactForm');
+    node.classList.remove('.contactForm');
   }
 })();
 
@@ -34,3 +37,28 @@ fetch('https://api.openweathermap.org/data/2.5/weather?id=703448&appid=357273476
 
 
 
+document.querySelector('.nav2').onmouseenter = () => {
+  document.querySelector('.nav2').style.background = 'gray';
+  console.log(1);
+}
+
+
+
+
+document.querySelector('.active').onmouseenter = () => {
+  document.querySelector('.active').style.background = 'white';
+}
+document.querySelector('.active').onmouseleave = () => {
+  document.querySelector('.active').style.background = ' black';
+  document.querySelector('.active').style.opacity = 0.8;
+}
+
+
+
+//linav2
+document.querySelector('.nav2').onmouseleave = () => {
+  document.querySelector('.nav2').style.background = 'whitesmoke';
+  document.querySelector('.nav2').style.opacity = 0.8;
+
+  console.log(1);
+}
