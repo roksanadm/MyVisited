@@ -1,39 +1,54 @@
-
-//$('.contact').magnificContact();
-
-
-
-(function main() {
-  document.addEventListener('DOMContentLoaded', DOMContentLoaded);
-
-  function DOMContentLoaded() {
-    var buttonNode = document.querySelector('.btnflip-item btnflip__back');
-    buttonNode.addEventListener('click', showForm);
-  }
-
-  function showForm() {
-    var node = document.querySelector('.contactForm');
-    node.classList.remove('.contactForm');
-  }
-})();
+/*
+$('.form').magnificContact();*/
 
 
-fetch('https://api.openweathermap.org/data/2.5/weather?id=703448&appid=35727347632d7516f055c2ea2466f3e1')
-  .then(function (resp) { return resp.json() })
-  .then(function (data) {
-    console.log(data);
-    document.querySelector('.package-name').textContent = data.name;
-    document.querySelector('.price').innerHTML = Math.round(data.main.temp - 273) + '&deg;';
-    document.querySelector('.disclaimer').textContent = data.weather[0]['description'];
-    document.querySelector('.features li').innerHTML = '<img src ="https://openweathermap.org/img/wn/' + data.weather[0]['icon'] + '@2x.png">';
 
-  })
-  .catch(function () {
 
+function DOMContentLoaded() {
+  var buttonNode = document.querySelector('.btnflip-item btnflip__back');
+  buttonNode.addEventListener('click', showForm);
+}
+
+function showForm() {
+  var node = document.querySelector('#form');
+  node.classList.remove('#form');
+}
+;
+
+$(document).ready(function () {
+  $('#form').submit(function () {
+    if (document.form.name.value == '' || document.form.phone.value == '' || document.form.mail.value == '' || document.form.coment.value == '') {
+      valid = false;
+      return valid;
+    }
+    $.ajax({
+      type: "POST",
+      url: "index.php",
+      data: $(this).serialize()
+    }).done(function () {
+      $('.js-overlay-thank-you').fadeIn();
+      $(this).find('input').val('');
+      $('#form').trigger('reset');
+    });
+    return false;
   });
 
 
-//https://openweathermap.org/img/wn/02d@2x.png
+});
+//Закрыть
+
+$('.js-close-thank-you').click(function () {
+  $('.js-overlay-thank-you').fadeOut();
+});
+$(document).mouseup(function (e) {
+  var popup = $('popup');
+  if (e.target != popup[0] && popup.has(e.target).lenght === 0) {
+    $('.js-overlay-thank-you').fadeOut();
+  }
+});
+
+//
+
 
 
 
